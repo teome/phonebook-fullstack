@@ -1,0 +1,30 @@
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/persons/62223d1555b44beeb905a43c
+
+###
+GET http://localhost:3001/info
+
+###
+DELETE http://localhost:3001/api/persons/6228c2226285ee795ae48933
+
+###
+POST http://localhost:3001/api/persons HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Bobb Smith",
+  "number": "11-33488"
+}
+
+###
+PUT http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Trey Smith",
+  "number": "1111-2222"
+}
+
+
